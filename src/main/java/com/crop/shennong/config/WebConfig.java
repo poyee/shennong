@@ -1,6 +1,7 @@
 package com.crop.shennong.config;
 
 import com.crop.shennong.crop.CropController;
+import com.crop.shennong.purchase.PurchaseController;
 import com.crop.shennong.registration.AuthController;
 import com.crop.shennong.unit.UnitController;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +19,8 @@ public class WebConfig {
         List<Class<?>> classes = Arrays.asList(
                 CropController.class,
                 AuthController.class,
-                UnitController.class
+                UnitController.class,
+                PurchaseController.class
         );
 
         return new HashSet<>(classes);

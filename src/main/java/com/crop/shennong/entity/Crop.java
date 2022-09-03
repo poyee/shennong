@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -13,10 +14,10 @@ import javax.persistence.OneToOne;
 @Setter
 public class Crop {
     @Id
-    private long uid;
+    private Long uid;
     private String cname;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "plv1")
     private CropCategory category;
 }

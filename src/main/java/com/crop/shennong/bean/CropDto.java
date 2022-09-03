@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class CropDto {
-    private long cropUid;
+    private Long cropUid;
     private String cname;
-    private int plv1;
+    private Integer plv1;
     private String categoryName;
 }

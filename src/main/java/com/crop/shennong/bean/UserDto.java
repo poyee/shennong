@@ -6,7 +6,7 @@ import java.util.List;
 
 @Value
 public class UserDto {
-    private long id;
+    private Long id;
     private String displayName;
     private String phone;
     private List<String> roles;
