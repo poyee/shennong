@@ -1,10 +1,8 @@
-package com.crop.shennong.entity.modelmapping;
+package com.crop.shennong.crop.modelmapping;
 
 import com.crop.shennong.bean.CropDto;
 import com.crop.shennong.entity.Crop;
 import org.modelmapper.PropertyMap;
-
-import java.util.Collections;
 
 public class CropEntityToDtoMap extends PropertyMap<Crop, CropDto> {
     @Override

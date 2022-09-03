@@ -1,6 +1,6 @@
 package com.crop.shennong.config;
 
-import com.crop.shennong.entity.modelmapping.CropEntityToDtoMap;
+import com.crop.shennong.crop.modelmapping.CropEntityToDtoMap;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
